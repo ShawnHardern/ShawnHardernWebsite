@@ -1,0 +1,62 @@
+.header {
+  background: #0C0C0D;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  width: 80%;
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.name {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-right: 3rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: transparent;
+  }
+
+  &:hover {
+    &:after {
+      background: #FFFFFF;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.linkActive {
+  color: var(--gold);
+
+    &:after {
+      background: var(--gold);
+    }
+
+  &:hover {
+    &:after {
+      background: var(--gold);
+    }
+  }
+}
